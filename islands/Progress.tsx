@@ -1,4 +1,4 @@
-import * as Progress from '@radix-ui/react-progress';
+import * as Progress from "@radix-ui/react-progress";
 import { useEffect, useState } from "preact/hooks";
 
 const ProgressDemo = () => {
@@ -15,7 +15,7 @@ const ProgressDemo = () => {
       style={{
         // Fix overflow clipping in Safari
         // https://gist.github.com/domske/b66047671c780a238b51c51ffde8d3a0
-        transform: 'translateZ(0)',
+        transform: "translateZ(0)",
       }}
       value={progress}
     >

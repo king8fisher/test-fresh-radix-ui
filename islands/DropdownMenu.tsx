@@ -1,16 +1,16 @@
-import {  useState } from "preact/hooks";
-import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
+import { useState } from "preact/hooks";
+import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 import {
-  HamburgerMenuIcon,
-  DotFilledIcon,
   CheckIcon,
   ChevronRightIcon,
-} from '@radix-ui/react-icons';
+  DotFilledIcon,
+  HamburgerMenuIcon,
+} from "@radix-ui/react-icons";
 
 const DropdownMenuDemo = () => {
   const [bookmarksChecked, setBookmarksChecked] = useState(true);
   const [urlsChecked, setUrlsChecked] = useState(false);
-  const [person, setPerson] = useState('pedro');
+  const [person, setPerson] = useState("pedro");
 
   return (
     <DropdownMenu.Root>
@@ -29,13 +29,13 @@ const DropdownMenuDemo = () => {
           sideOffset={5}
         >
           <DropdownMenu.Item className="group text-[13px] leading-none text-violet11 rounded-[3px] flex items-center h-[25px] px-[5px] relative pl-[25px] select-none outline-none data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none data-[highlighted]:bg-violet9 data-[highlighted]:text-violet1">
-            New Tab{' '}
+            New Tab{" "}
             <div className="ml-auto pl-[20px] text-mauve11 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8">
               ⌘+T
             </div>
           </DropdownMenu.Item>
           <DropdownMenu.Item className="group text-[13px] leading-none text-violet11 rounded-[3px] flex items-center h-[25px] px-[5px] relative pl-[25px] select-none outline-none data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none data-[highlighted]:bg-violet9 data-[highlighted]:text-violet1">
-            New Window{' '}
+            New Window{" "}
             <div className="ml-auto pl-[20px] text-mauve11 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8">
               ⌘+N
             </div>
@@ -44,7 +44,7 @@ const DropdownMenuDemo = () => {
             className="group text-[13px] leading-none text-violet11 rounded-[3px] flex items-center h-[25px] px-[5px] relative pl-[25px] select-none outline-none data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none data-[highlighted]:bg-violet9 data-[highlighted]:text-violet1"
             disabled
           >
-            New Private Window{' '}
+            New Private Window{" "}
             <div className="ml-auto pl-[20px] text-mauve11 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8">
               ⇧+⌘+N
             </div>
@@ -63,7 +63,7 @@ const DropdownMenuDemo = () => {
                 alignOffset={-5}
               >
                 <DropdownMenu.Item className="group text-[13px] leading-none text-violet11 rounded-[3px] flex items-center h-[25px] px-[5px] relative pl-[25px] select-none outline-none data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none data-[highlighted]:bg-violet9 data-[highlighted]:text-violet1">
-                  Save Page As…{' '}
+                  Save Page As…{" "}
                   <div className="ml-auto pl-[20px] text-mauve11 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8">
                     ⌘+S
                   </div>
@@ -92,7 +92,7 @@ const DropdownMenuDemo = () => {
             <DropdownMenu.ItemIndicator className="absolute left-0 w-[25px] inline-flex items-center justify-center">
               <CheckIcon />
             </DropdownMenu.ItemIndicator>
-            Show Bookmarks{' '}
+            Show Bookmarks{" "}
             <div className="ml-auto pl-[20px] text-mauve11 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8">
               ⌘+B
             </div>

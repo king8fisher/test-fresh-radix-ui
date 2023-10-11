@@ -1,4 +1,4 @@
-import * as AlertDialog from '@radix-ui/react-alert-dialog';
+import * as AlertDialog from "@radix-ui/react-alert-dialog";
 
 const AlertDialogDemo = () => (
   <AlertDialog.Root>
@@ -14,8 +14,8 @@ const AlertDialogDemo = () => (
           Are you absolutely sure?
         </AlertDialog.Title>
         <AlertDialog.Description className="text-mauve11 mt-4 mb-5 text-[15px] leading-normal">
-          This action cannot be undone. This will permanently delete your account and remove your
-          data from our servers.
+          This action cannot be undone. This will permanently delete your
+          account and remove your data from our servers.
         </AlertDialog.Description>
         <div className="flex justify-end gap-[25px]">
           <AlertDialog.Cancel asChild>

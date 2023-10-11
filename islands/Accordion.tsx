@@ -1,7 +1,7 @@
-import { forwardRef } from "preact/compat";
-import classNames from "classnames";
 import * as Accordion from "@radix-ui/react-accordion";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
+import classNames from "classnames";
+import { forwardRef } from "preact/compat";
 
 const AccordionDemo = () => (
   <Accordion.Root

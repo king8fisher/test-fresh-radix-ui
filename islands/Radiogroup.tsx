@@ -1,4 +1,4 @@
-import * as RadioGroup from '@radix-ui/react-radio-group';
+import * as RadioGroup from "@radix-ui/react-radio-group";
 
 const RadioGroupDemo = () => (
   <form>
@@ -15,7 +15,10 @@ const RadioGroupDemo = () => (
         >
           <RadioGroup.Indicator className="flex items-center justify-center w-full h-full relative after:content-[''] after:block after:w-[11px] after:h-[11px] after:rounded-[50%] after:bg-violet11" />
         </RadioGroup.Item>
-        <label className="text-white text-[15px] leading-none pl-[15px]" htmlFor="r1">
+        <label
+          className="text-white text-[15px] leading-none pl-[15px]"
+          htmlFor="r1"
+        >
           Default
         </label>
       </div>
@@ -27,7 +30,10 @@ const RadioGroupDemo = () => (
         >
           <RadioGroup.Indicator className="flex items-center justify-center w-full h-full relative after:content-[''] after:block after:w-[11px] after:h-[11px] after:rounded-[50%] after:bg-violet11" />
         </RadioGroup.Item>
-        <label className="text-white text-[15px] leading-none pl-[15px]" htmlFor="r2">
+        <label
+          className="text-white text-[15px] leading-none pl-[15px]"
+          htmlFor="r2"
+        >
           Comfortable
         </label>
       </div>
@@ -39,7 +45,10 @@ const RadioGroupDemo = () => (
         >
           <RadioGroup.Indicator className="flex items-center justify-center w-full h-full relative after:content-[''] after:block after:w-[11px] after:h-[11px] after:rounded-[50%] after:bg-violet11" />
         </RadioGroup.Item>
-        <label className="text-white text-[15px] leading-none pl-[15px]" htmlFor="r3">
+        <label
+          className="text-white text-[15px] leading-none pl-[15px]"
+          htmlFor="r3"
+        >
           Compact
         </label>
       </div>

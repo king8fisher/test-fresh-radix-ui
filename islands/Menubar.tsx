@@ -1,12 +1,18 @@
-import React from 'react';
-import * as Menubar from '@radix-ui/react-menubar';
-import { CheckIcon, ChevronRightIcon, DotFilledIcon } from '@radix-ui/react-icons';
+import React from "react";
+import * as Menubar from "@radix-ui/react-menubar";
+import {
+  CheckIcon,
+  ChevronRightIcon,
+  DotFilledIcon,
+} from "@radix-ui/react-icons";
 
-const RADIO_ITEMS = ['Andy', 'Benoît', 'Luis'];
-const CHECK_ITEMS = ['Always Show Bookmarks Bar', 'Always Show Full URLs'];
+const RADIO_ITEMS = ["Andy", "Benoît", "Luis"];
+const CHECK_ITEMS = ["Always Show Bookmarks Bar", "Always Show Full URLs"];
 
 const MenubarDemo = () => {
-  const [checkedSelection, setCheckedSelection] = React.useState([CHECK_ITEMS[1]]);
+  const [checkedSelection, setCheckedSelection] = React.useState([
+    CHECK_ITEMS[1],
+  ]);
   const [radioSelection, setRadioSelection] = React.useState(RADIO_ITEMS[2]);
 
   return (
@@ -23,13 +29,13 @@ const MenubarDemo = () => {
             alignOffset={-3}
           >
             <Menubar.Item className="group text-[13px] leading-none text-violet11 rounded flex items-center h-[25px] px-[10px] relative select-none outline-none data-[state=open]:bg-violet4 data-[state=open]:text-violet11 data-[highlighted]:bg-gradient-to-br data-[highlighted]:from-violet9 data-[highlighted]:to-violet10 data-[highlighted]:text-violet1 data-[highlighted]:data-[state=open]:text-violet1 data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none">
-              New Tab{' '}
+              New Tab{" "}
               <div className="ml-auto pl-5 text-mauve9 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8">
                 ⌘ T
               </div>
             </Menubar.Item>
             <Menubar.Item className="group text-[13px] leading-none text-violet11 rounded flex items-center h-[25px] px-[10px] relative select-none outline-none data-[state=open]:bg-violet4 data-[state=open]:text-violet11 data-[highlighted]:bg-gradient-to-br data-[highlighted]:from-violet9 data-[highlighted]:to-violet10 data-[highlighted]:text-violet1 data-[highlighted]:data-[state=open]:text-violet1 data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none">
-              New Window{' '}
+              New Window{" "}
               <div className="ml-auto pl-5 text-mauve9 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8">
                 ⌘ N
               </div>
@@ -67,7 +73,7 @@ const MenubarDemo = () => {
             </Menubar.Sub>
             <Menubar.Separator className="h-[1px] bg-violet6 m-[5px]" />
             <Menubar.Item className="group text-[13px] leading-none text-violet11 rounded flex items-center h-[25px] px-[10px] relative select-none outline-none data-[highlighted]:bg-gradient-to-br data-[highlighted]:from-violet9 data-[highlighted]:to-violet10 data-[highlighted]:text-violet1 data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none">
-              Print…{' '}
+              Print…{" "}
               <div className="ml-auto pl-5 text-mauve9 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8">
                 ⌘ P
               </div>
@@ -88,13 +94,13 @@ const MenubarDemo = () => {
             alignOffset={-3}
           >
             <Menubar.Item className="group text-[13px] leading-none text-violet11 rounded flex items-center h-[25px] px-[10px] relative select-none outline-none data-[state=open]:bg-violet4 data-[state=open]:text-violet11 data-[highlighted]:bg-gradient-to-br data-[highlighted]:from-violet9 data-[highlighted]:to-violet10 data-[highlighted]:text-violet1 data-[highlighted]:data-[state=open]:text-violet1 data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none">
-              Undo{' '}
+              Undo{" "}
               <div className="ml-auto pl-5 text-mauve9 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8">
                 ⌘ Z
               </div>
             </Menubar.Item>
             <Menubar.Item className="group text-[13px] leading-none text-violet11 rounded flex items-center h-[25px] px-[10px] relative select-none outline-none data-[state=open]:bg-violet4 data-[state=open]:text-violet11 data-[highlighted]:bg-gradient-to-br data-[highlighted]:from-violet9 data-[highlighted]:to-violet10 data-[highlighted]:text-violet1 data-[highlighted]:data-[state=open]:text-violet1 data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none">
-              Redo{' '}
+              Redo{" "}
               <div className="ml-auto pl-5 text-mauve9 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8">
                 ⇧ ⌘ Z
               </div>
@@ -164,8 +170,7 @@ const MenubarDemo = () => {
                     current.includes(item)
                       ? current.filter((el) => el !== item)
                       : current.concat(item)
-                  )
-                }
+                  )}
               >
                 <Menubar.ItemIndicator className="absolute left-0 w-5 inline-flex items-center justify-center">
                   <CheckIcon />
@@ -175,7 +180,7 @@ const MenubarDemo = () => {
             ))}
             <Menubar.Separator className="h-[1px] bg-violet6 m-[5px]" />
             <Menubar.Item className="group text-[13px] leading-none text-violet11 rounded flex items-center h-[25px] px-[10px] relative select-none pl-5 outline-none data-[state=open]:bg-violet4 data-[state=open]:text-violet11 data-[highlighted]:bg-gradient-to-br data-[highlighted]:from-violet9 data-[highlighted]:to-violet10 data-[highlighted]:text-violet1 data-[highlighted]:data-[state=open]:text-violet1 data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none">
-              Reload{' '}
+              Reload{" "}
               <div className="ml-auto pl-5 text-mauve9 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8">
                 ⌘ R
               </div>
@@ -184,7 +189,7 @@ const MenubarDemo = () => {
               className="group text-[13px] leading-none text-violet11 rounded flex items-center h-[25px] px-[10px] relative select-none pl-5 outline-none data-[state=open]:bg-violet4 data-[state=open]:text-violet11 data-[highlighted]:bg-gradient-to-br data-[highlighted]:from-violet9 data-[highlighted]:to-violet10 data-[highlighted]:text-violet1 data-[highlighted]:data-[state=open]:text-violet1 data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none"
               disabled
             >
-              Force Reload{' '}
+              Force Reload{" "}
               <div className="ml-auto pl-5 text-mauve9 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8">
                 ⇧ ⌘ R
               </div>
@@ -212,7 +217,10 @@ const MenubarDemo = () => {
             sideOffset={5}
             alignOffset={-14}
           >
-            <Menubar.RadioGroup value={radioSelection} onValueChange={setRadioSelection}>
+            <Menubar.RadioGroup
+              value={radioSelection}
+              onValueChange={setRadioSelection}
+            >
               {RADIO_ITEMS.map((item) => (
                 <Menubar.RadioItem
                   className="text-[13px] leading-none text-violet11 rounded flex items-center h-[25px] px-[10px] relative select-none pl-5 outline-none data-[highlighted]:bg-gradient-to-br data-[highlighted]:from-violet9 data-[highlighted]:to-violet10 data-[highlighted]:text-violet1 data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none"

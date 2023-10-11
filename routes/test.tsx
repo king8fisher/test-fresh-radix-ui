@@ -35,7 +35,6 @@ export default function Home() {
         <title>Test Fresh Radix UI</title>
       </Head>
       <div class="px-4 py-8 mx-auto bg-gray-8">
-        
         <ToggleGroupDemo></ToggleGroupDemo>
         <ToggleDemo></ToggleDemo>
         <AvatarDemo></AvatarDemo>
